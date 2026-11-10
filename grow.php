@@ -259,7 +259,6 @@ class Stalk
     {
         $this->col = $col;
         $this->row = World::$size["rows"] - 1;
-        //$this->charChoices = ["┤", "├", "|"];
         $this->charChoices = ["|"];
         $this->colorCode = "92";
         $this->maxHeight = rand(2, World::$size["rows"] - 2);
@@ -294,7 +293,6 @@ class Stalk
 
 class Renderer
 {
-
     public static function hideCursor()
     {
         echo "\x1b[?25l";
